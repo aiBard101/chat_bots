@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+#chatbot-link {
+    color: white;
+    text-decoration: none;
+    background-color: #ff5722;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+main {
+    padding: 6em 1em 1em; /* Adjust top padding to accommodate fixed header */
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+#menu {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-column {
+    width: calc(50% - 1em);
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.menu-item img {
+    border-radius: 8px;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu-item p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Remove 'fixed' positioning to allow content flow */
+    clear: both; /* Ensure footer clears content properly */
+    margin-top: 1em; /* Add space after last food items */
+}
